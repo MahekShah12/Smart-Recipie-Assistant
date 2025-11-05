@@ -207,7 +207,7 @@
     <script>
 /* ---------- configuration ---------- */
 const API_BASE = (location.hostname === "localhost" || location.hostname === "127.0.0.1") ? "http://localhost:5000" : ""; 
-const apiKey = "AIzaSyAf-sRTtwKqyhhnx7pQyRwz8iwT3A0lYB0";
+const apiKey = "";
 
 /* ---------- grab DOM elements ---------- */
 // NEW: Grab layout containers
@@ -455,7 +455,7 @@ function fileToBase64(file) {
 }
 
 async function callGenerativeAITextOnly(prompt) {
-    const apiKey = "AIzaSyAf-sRTtwKqyhhnx7pQyRwz8iwT3A0lYB0"; // <-- PASTE YOUR API KEY HERE
+    const apiKey = ""; // <-- PASTE YOUR API KEY HERE
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${apiKey}`;
 
     const payload = {
@@ -465,7 +465,7 @@ async function callGenerativeAITextOnly(prompt) {
 }
 
 async function callGenerativeAIWithImage(prompt, image) {
-    const apiKey = "AIzaSyAf-sRTtwKqyhhnx7pQyRwz8iwT3A0lYB0"; // <-- PASTE YOUR API KEY HERE
+    const apiKey = "" // <-- PASTE YOUR API KEY HERE
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${apiKey}`;
 
     const payload = {
@@ -577,4 +577,5 @@ function escapeHtml(text) {
 </script>
 
 </body>
+
 </html>
